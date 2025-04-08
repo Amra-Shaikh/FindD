@@ -4,7 +4,7 @@ Detecting fraudulent transactions in credit card data using machine learning.
 
 ## Overview
 
-This project focuses on identifying fraudulent credit card transactions using a dataset of transactions made by European cardholders in September 2013. Out of 284,807 transactions, only 492 are fraudulent—highlighting a major class imbalance (0.172%).
+This project focuses on identifying fraudulent credit card transactions using a dataset of transactions made by European cardholders in September 2013. Out of 284,807 transactions, only 492 are fraudulent — highlighting a major class imbalance (0.172%).
 
 The project aims to develop a classification model that can accurately detect fraudulent transactions using effective data preprocessing, balancing techniques, and hyperparameter tuning.
 
@@ -19,17 +19,17 @@ The project aims to develop a classification model that can accurately detect fr
 
 ## Dataset
 
-- Source: https://kh3-ls-storage.s3.us-east-1.amazonaws.com/DS%20Project%20Guide%20Data%20Set/creditcard.csv
-- Total transactions: 284,807
-- Fraudulent transactions: 492 (~0.172%)
-- Time period: Two days of transactions by European cardholders
-- Features: Includes anonymized features (V1-V28), plus Time, Amount, and Class (target)
+- **Source**: [Download Dataset](https://kh3-ls-storage.s3.us-east-1.amazonaws.com/DS%20Project%20Guide%20Data%20Set/creditcard.csv)
+- **Total transactions**: 284,807
+- **Fraudulent transactions**: 492 (~0.172%)
+- **Time period**: Two days of transactions by European cardholders
+- **Features**: Includes anonymized features (V1–V28), Time, Amount, and Class (target)
 
 ## Getting Started
 
 ### Prerequisites
 
-Ensure you have Python 3.10.14 installed. The following libraries are also required:
+Ensure you have Python 3.10.14 installed. Required libraries include:
 
 - pandas  
 - numpy  
@@ -39,16 +39,16 @@ Ensure you have Python 3.10.14 installed. The following libraries are also requi
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
 
-```
+```bash
 git clone https://github.com/Amra-Shaikh/FindDefault.git
 cd FindDefault
 ```
 
-2. Install the required libraries:
+Install the required dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 Follow these steps to replicate the results:
 
-1. Load the dataset (creditcard.csv).
+1. Load the dataset (`creditcard.csv`).
 2. Perform exploratory data analysis (EDA) to identify patterns.
 3. Preprocess the dataset:
    - Remove duplicates
@@ -64,8 +64,8 @@ Follow these steps to replicate the results:
    - Detect and treat outliers
 4. Apply data balancing techniques (e.g., SMOTE or undersampling).
 5. Train various classification models.
-6. Evaluate models using appropriate metrics (precision, recall, F1-score, AUC).
-7. Tune hyperparameters using RandomizedSearchCV.
+6. Evaluate models using appropriate metrics: precision, recall, F1-score, ROC-AUC.
+7. Tune hyperparameters using `RandomizedSearchCV`.
 8. Test the model on unseen data and assess generalization performance.
 
 ## Project Structure
@@ -73,24 +73,24 @@ Follow these steps to replicate the results:
 ```
 FindDefault/
 │
-├── data/                      # Folder for dataset
-├── notebooks/                 # Jupyter notebooks for EDA and modeling
-├── models/                    # Saved model files (optional)
-├── requirements.txt           # List of dependencies
-├── README.md                  # Project documentation
-└── LICENSE                    # Project license
+├── data/            # Folder for dataset
+├── notebooks/       # Jupyter notebooks for EDA and modeling
+├── models/          # Saved model files (optional)
+├── requirements.txt # List of dependencies
+├── README.md        # Project documentation
+└── LICENSE          # Project license
 ```
 
 ## Results
 
-After preprocessing and tuning, the selected model was able to generalize well on unseen data, improving metrics such as:
+After preprocessing and hyperparameter tuning, the selected model generalized well on unseen data, improving:
 
-- Precision
-- Recall
-- F1-score
-- ROC-AUC Score
+- Precision  
+- Recall  
+- F1-score  
+- ROC-AUC  
 
-Hyperparameter tuning using RandomizedSearchCV significantly enhanced the model's ability to detect fraud more accurately while minimizing false positives.
+Hyperparameter tuning using `RandomizedSearchCV` significantly enhanced the model's ability to detect fraud more accurately while minimizing false positives.
 
 ## Future Work
 
@@ -103,20 +103,20 @@ Hyperparameter tuning using RandomizedSearchCV significantly enhanced the model'
 
 Contributions are welcome! To contribute:
 
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Open a pull request
+1. Fork the repository  
+2. Create a new branch  
+3. Commit your changes  
+4. Open a pull request  
 
-For major changes, please open an issue first to discuss the proposed changes.
+For major changes, please open an issue first to discuss the proposed updates.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Dataset provided by: https://kh3-ls-storage.s3.us-east-1.amazonaws.com/DS%20Project%20Guide%20Data%20Set/creditcard.csv
+- Dataset provided by: [Credit Card Fraud Detection Dataset](https://kh3-ls-storage.s3.us-east-1.amazonaws.com/DS%20Project%20Guide%20Data%20Set/creditcard.csv)
 - Thanks to the open-source community and contributors for tools and resources.
 
 ## Tech Stack
@@ -129,6 +129,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Maintainer
 
-Amra-Shaikh  
-GitHub: https://github.com/Amra-Shaikh
-
+**Amra-Shaikh**  
+GitHub:(https://github.com/Amra-Shaikh)
+```
