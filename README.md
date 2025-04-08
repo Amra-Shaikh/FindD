@@ -73,12 +73,13 @@ Follow these steps to replicate the results:
 ```
 FindDefault/
 │
-├── data/            # Folder for dataset
-├── notebooks/       # Jupyter notebooks for EDA and modeling
-├── models/          # Saved model files (optional)
+├── data/            # Contains the raw dataset (e.g., creditcard.csv)
+├── models/          # Directory to save trained model files
+├── notebook/        # Jupyter notebooks for EDA, preprocessing, modeling, etc.
+├── visuals/         # Plots, charts, and visual outputs for analysis
 ├── requirements.txt # List of dependencies
 ├── README.md        # Project documentation
-└── LICENSE          # Project license
+└── LICENSE          # Project license information
 ```
 
 ## Results
@@ -130,5 +131,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Maintainer
 
 **Amra-Shaikh**  
-GitHub:(https://github.com/Amra-Shaikh)
-```
+GitHub: (https://github.com/Amra-Shaikh)
